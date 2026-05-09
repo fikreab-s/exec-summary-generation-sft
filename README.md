@@ -99,3 +99,11 @@ python scripts/evaluate.py --model outputs/exec-summary-sft
 ## License
 
 MIT
+
+## 📸 Visual Tour
+
+![comparison](viz/comparison.png)
+
+![training](viz/training.gif)
+
+---
