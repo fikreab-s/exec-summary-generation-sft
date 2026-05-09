@@ -1,6 +1,9 @@
-# 📝 Executive Summary Generation SFT
+# Executive Summary Generation — SFT
 
-> Fine-tuned LFM2.5-1.2B to generate executive summaries from complex analytics reports — reducing analyst reporting time by 70%.
+> Fine-tuned model for generating executive summaries from commercial analytics outputs: MMM results, ROI analyses, and brand performance reports.
+>
+> **Context:** Translating complex causal analyses into VP-level executive summaries is a recurring bottleneck. This SFT approach automates the first draft, reducing turnaround from hours to minutes while maintaining business context accuracy.
+
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
