@@ -16,7 +16,7 @@
 
 ## 🎯 Problem
 
-At Merck, I routinely translate 20-page analytical reports (MMM outputs, causal inference results, scenario comparisons) into 1-page executive briefs for VP-level stakeholders. This takes 2-3 hours per brand per quarter. Automating this with a fine-tuned small model saves **70% of analyst time** while ensuring consistent quality.
+In enterprise pharma, I routinely translate 20-page analytical reports (MMM outputs, causal inference results, scenario comparisons) into 1-page executive briefs for VP-level stakeholders. This takes 2-3 hours per brand per quarter. Automating this with a fine-tuned small model saves **70% of analyst time** while ensuring consistent quality.
 
 ## 🧮 Mathematical Foundation
 
@@ -44,9 +44,9 @@ where $f$ penalizes tokens that would exceed the target summary length $L_{\text
 
 $$\mathcal{L}_{\text{SFT}}(\theta) = -\sum_{t=1}^{T} \log p_\theta(y_t \mid y_{<t}, x), \quad W' = W_0 + BA$$
 
-## 🏥 Merck Commercial Analytics Connection
+## 🏥 Enterprise Pharma Application
 
-This is a direct automation of my **daily workflow at Merck**:
+This is a direct automation of my **daily workflow in enterprise pharma settings**:
 
 | Manual Process | Automated Version |
 |---|---|
@@ -95,17 +95,6 @@ python scripts/evaluate.py --model outputs/exec-summary-sft
 | + SFT (LoRA r=16) | 0.36 | 88% | 460ms |
 | + SFT (LoRA r=32) | 0.40 | 95% | 465ms |
 | + SFT (r=32) + quality filter | **0.42** | **100%** | 465ms |
-
-## 📋 Resume Bullet
-
-> "Fine-tuned LFM2.5 for executive summary generation from analytics reports, achieving ROUGE-L of 0.42 and 100% key metric inclusion with 500ms generation latency."
-
-## 🔗 Liquid AI Connection
-
-- **Applied Text:** Core text generation task for enterprise customers
-- **Product:** Demonstrates customer-facing value proposition
-- **Edge:** Sub-500ms on CPU makes this viable for on-device analytics dashboards
-- **Privacy:** No proprietary data leaves the device
 
 ## License
 
